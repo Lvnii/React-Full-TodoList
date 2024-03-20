@@ -1,0 +1,67 @@
+.hero  {
+    display: flex;
+    width: 100%;
+    height: 260px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    padding-top: 100px;
+    border-bottom: 2px solid rgba(245, 245, 245, 0.616);
+}
+
+.hero .form {
+    display: flex;
+    position: relative;
+}
+
+.hero .form Button {
+    margin-left: -100px;
+    z-index: 1;
+    margin-top: 1px;    
+}
+
+.input-container {
+    display: flex;
+    width: 820px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.input-container input {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 14px;
+    padding-inline: 10px;
+    outline: none;
+    font-size: larger;
+    color: rgba(0, 0, 0, 0.801);
+}
+
+.button-container {
+    display: flex;
+    width: 140px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container .add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-family: 'Racing Sans One', sans-serif;
+    color: white;
+    height: 45px;
+    width: 100%;
+    background-color: #4F4F4F;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@import url('https://fonts.cdnfonts.com/css/racing-sans-one');
