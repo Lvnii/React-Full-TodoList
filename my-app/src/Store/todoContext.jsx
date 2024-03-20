@@ -3,6 +3,7 @@ import { useContext, Context, createContext, useState } from "react";
 const TodoContext = createContext({
     data: [],
     addTodo: () => {},
+    removeTodo: () => {},
 })
 
 export const TodoContextProvider = (props) => {
@@ -14,11 +15,20 @@ export const TodoContextProvider = (props) => {
         })
     }
 
+    const removeTodo = (itemId) => {
+        setData((prevState) => {
+            return [
+                ...prevState.filter((item, index) => index !== itemId)
+            ]
+        })
+    }
+
     return (
         <TodoContext.Provider
             value={{
                 data,
                 addTodo,
+                removeTodo,
             }}
         >
             {props.children}
